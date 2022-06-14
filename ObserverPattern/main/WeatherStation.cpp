@@ -2,6 +2,7 @@
 #include "CurrentConditionDisplay.h"
 #include "StatisticsDisplay.h"
 #include "ForcastDisplay.h"
+#include "HeatIndex.h"
 #include <iostream>
 
 int main()
@@ -10,6 +11,7 @@ int main()
     CurrentConditionDisplay currentConditionDisplay = CurrentConditionDisplay(&weatherData);
     StatisticsDisplay statisticsDisplay = StatisticsDisplay(&weatherData);
     ForcastDisplay forcastDisplay = ForcastDisplay(&weatherData);
+    HeatIndex heatIndex = HeatIndex(&weatherData);
     weatherData.setMeasurements(80, 65, 30.4);
     weatherData.setMeasurements(82, 70, 29.2);
     weatherData.setMeasurements(78, 90, 29.2);
