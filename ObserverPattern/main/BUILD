@@ -12,6 +12,8 @@ cc_binary(
             "StatisticsDisplay.cpp",
             "ForcastDisplay.h",
             "ForcastDisplay.cpp",
+            "HeatIndex.h",
+            "HeatIndex.cpp",
             "WeatherStation.cpp"
         ]
 )
